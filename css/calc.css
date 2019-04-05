@@ -22,7 +22,7 @@ body {
     margin: 3px;
 }
 
-#firstButt {
+.firstButt {
     width: 60px;
     height: 60px;
     font-size: 30px;
