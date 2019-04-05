@@ -6,10 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Simple javaScript Calculator</title>
-    <link rel="icon" type="image/ico" href="Calculator_icon.svg.png" />
-    <link rel="stylesheet" type="text/css" href="calc.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
-        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="icon" type="image/ico" href="images/Calculator_icon.svg.png" />
+    <link rel="stylesheet" type="text/css" href="css/calc.css">
 </head>
 
 <body>
@@ -18,35 +16,35 @@
     <div id="container">
         <form name="Calculator" action="">
 
-            <input id="answerFeild" type="text" placeholder="0" maxlength="10" readonly>
+            <input id="answerFeild" type="text" placeholder="0" maxlength="14" readonly>
             <br>
-            <input id="firstButt" type="button" value="7" onclick="getNumber(7)">
-            <input id="digits" type="button" value="8" onclick="getNumber(8)">
-            <input id="digits" type="button" value="9" onclick="getNumber(9)">
-            <input id="digits" type="button" value="+" onclick="getOperand('+')">
+            <input class="firstButt" type="button" value="7" onclick="getNumber(7)">
+            <input class="digits" type="button" value="8" onclick="getNumber(8)">
+            <input class="digits" type="button" value="9" onclick="getNumber(9)">
+            <input class="digits" type="button" value="+" onclick="getOperand('+')">
             <br>
-            <input id="firstButt" type="button" value="4" onclick="getNumber(4)">
-            <input id="digits" type="button" value="5" onclick="getNumber(5)">
-            <input id="digits" type="button" value="6" onclick="getNumber(6)">
-            <input id="digits" type="button" value="&#150;" onclick="getOperand('-')">
+            <input class="firstButt" type="button" value="4" onclick="getNumber(4)">
+            <input class="digits" type="button" value="5" onclick="getNumber(5)">
+            <input class="digits" type="button" value="6" onclick="getNumber(6)">
+            <input class="digits" type="button" value="&#150;" onclick="getOperand('-')">
             <br>
-            <input id="firstButt" type="button" value="1" onclick="getNumber(1)">
-            <input id="digits" type="button" value="2" onclick="getNumber(2)">
-            <input id="digits" type="button" value="3" onclick="getNumber(3)">
-            <input id="digits" type="button" value="&#120;" onclick="getOperand('*')">
+            <input class="firstButt" type="button" value="1" onclick="getNumber(1)">
+            <input class="digits" type="button" value="2" onclick="getNumber(2)">
+            <input class="digits" type="button" value="3" onclick="getNumber(3)">
+            <input class="digits" type="button" value="&#120;" onclick="getOperand('*')">
             <br>
-            <input id="firstButt" type="button" value="0" onclick="getNumber(0)">
-            <input id="digits" type="button" value="." onclick="getNumber('.')">
-            <input id="digits" type="button" value="&#8592;" onclick="backspace()" style="color:red">
-            <input id="digits" type="button" value="&#247;" onclick="getOperand('/')">
+            <input class="firstButt" type="button" value="0" onclick="getNumber(0)">
+            <input class="digits" type="button" value="." onclick="getNumber('.')">
+            <input class="digits" type="button" value="&#8592;" onclick="backspace()" style="color:red">
+            <input class="digits" type="button" value="&#247;" onclick="getOperand('/')">
             <br>
-            <input id="evalButt" type="button" value="C" onclick="clearScreen()"
-                style="background:red; color:white; width:120px; height: 40px">
-            <input id="evalButt" type="button" value="=" onclick="compute()"
-                style="background:green; color: white; width: 120px; height: 40px">
+            <input class="evalButt" type="button" value="C" onclick="clearScreen()" style="background:red; width: 120px;
+            height: 40px; color: white">
+            <input class="evalButt" type="button" value="=" onclick="compute()" style="background:green;  width: 120px;
+            height: 40px;  color: white">
         </form>
     </div>
-    <script src="calc.js"></script>
+    <script src="js/calc.js"></script>
 </body>
 
 </html>
