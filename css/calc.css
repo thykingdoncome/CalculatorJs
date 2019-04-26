@@ -1,46 +1,125 @@
 body {
-    background-color: rgb(196, 174, 152);
+    background-color: rgb(236, 96, 71);
     text-align: center;
     margin: 0 auto;
-    color: rgb(10, 46, 19);
+    color: rgb(225, 245, 230);
+
+}
+
+h1 {
+    text-shadow: 2px 2px 3px black;
+}
+
+#topLine {
+    border: 2px solid white;
+    width: 380px;
 }
 
 #container {
-    width: 261px;
-    background-color: rgb(6, 100, 100);
+    width: 290px;
+    background-color: rgb(253, 253, 253);
     padding: 2%;
     margin: 5% auto;
     border-radius: 6px;
+    box-shadow: 3px 5px 6px black;
+}
+
+#inputFeild {
+    text-align: right;
+    width: 280px;
+    height: 50px;
+    font-size: 30px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
 }
 
 #answerFeild {
-    text-align: right;
-    width: 250px;
-    height: 60px;
+    width: 280px;
+    height: 50px;
     font-size: 30px;
-    border-radius: 6px;
-    margin: 3px;
+    border: none;
+    margin: 0;
+    padding: 0;
+    text-align: right;
+    outline: none;
+}
+
+
+#answerFeild::-webkit-input-placeholder {
+    /* WebKit, Blink, Edge */
+    text-align: left;
+
+}
+
+#answerFeild:-moz-placeholder {
+    /* Mozilla Firefox 4 to 18 */
+    text-align: left;
+
+}
+
+#answerFeild::-moz-placeholder {
+    /* Mozilla Firefox 19+ */
+    text-align: left;
+}
+
+#answerFeild:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    text-align: left;
 }
 
 .firstButt {
-    width: 60px;
-    height: 60px;
+    width: 68px;
+    height: 50px;
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
     margin: 3px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    outline: none;
+    transition: 1s;
+    background: rgb(161, 159, 159);
 }
 
-input[type=button] {
-    width: 60px;
-    height: 60px;
+.lastButt {
+    background: rgb(27, 55, 99);
+    width: 68px;
+    height: 50px;
     font-size: 30px;
     border-radius: 6px;
     cursor: pointer;
     border: none;
-    color: rgb(151, 81, 32);
+    color: white;
+    outline: none;
+    transition: 1s
+}
+
+.digits {
+    width: 68px;
+    height: 50px;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    outline: none;
+    background: rgb(161, 159, 159);
+    transition: 1s
 }
 
 input[type=button]:hover {
-    background-color: rgb(161, 236, 207);
+    background-color: rgb(11, 15, 13);
+    box-shadow: 2px 2px 3px black;
+}
+
+h4 {
+    color: whitesmoke;
+}
+
+strong {
+    color: red;
+    text-shadow: 2px 2px 3px black;
 }
